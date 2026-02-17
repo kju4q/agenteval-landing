@@ -203,12 +203,15 @@
       }
 
       .problem-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
       }
 
       .problem-card {
+        flex: 0 1 320px;
+        max-width: 400px;
         background: rgba(135, 168, 120, 0.03);
         border: 1px solid rgba(135, 168, 120, 0.1);
         border-radius: 12px;
@@ -273,13 +276,16 @@
       }
 
       .test-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
         margin-top: 48px;
       }
 
       .test-item {
+        flex: 0 1 200px;
+        max-width: 250px;
         background: rgba(135, 168, 120, 0.03);
         border: 1px solid rgba(135, 168, 120, 0.1);
         border-radius: 12px;
@@ -507,7 +513,7 @@
     <section class="final-cta">
       <div class="container">
         <h2>The trust layer for AI agents</h2>
-        <p>AgentEval is launching on Virtuals. Follow for updates.</p>
+        <p>Follow for updates.</p>
         <div class="cta-group">
           <a href="https://x.com/kjut4q" class="btn btn-primary">
             Follow on X
