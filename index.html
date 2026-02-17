@@ -236,13 +236,16 @@
       }
 
       .steps {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 32px;
         margin-top: 48px;
       }
 
       .step {
+        flex: 0 1 220px;
+        max-width: 260px;
         text-align: center;
       }
 
